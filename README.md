@@ -27,13 +27,29 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+  - the '.forEach' array method executes a user-defined function on every element in the array. I doesn't (at least by default) create a new array in the execution. However, '.map' does. '.map' creates a new array from an existing array based on the specified cb function used as a parameter in the method without altering the original array.
+
 2. Explain the difference between a callback and a higher order function.
+
+  - A callback is a reference to a previously defined function within the program and can be passed as a parameter within another function definition. A higher-order function, on the other hand, is a function that has another function defined within itself that executes when the higher-order function is called.
 
 3. What is closure?
 
+  - Closure is when a function has everything it needs to properly execute. i.e., if the function is returning a variable, that variable needs to be defined somewhere either within the function definition, globally, or within a higher-order function. To that, closure also gives a function the ability to look outside of its normally limited scope (like in most other programming languages).
+
 4. Describe the four rules of the 'this' keyword.
 
+  - Windowed - the 'this' keyword can be bound to the window (the global object) and then when it is referenced within the program references the window.
+
+  - implicit - the 'this' keyword can be implicitly bound to an object. When referenced within an **individual** object, it refers to the object it is within.
+
+  - New - when the 'this' keyword is used within a constructor function, 'this' refers to each individual object that is created from that constructor.
+
+  - Explicit - explicit binding uses the 'call' and 'apply' methods on previously defined methods or objects as a whole. Used with inheritance when extending an object to a child object.
+
 5. Why do we need super() in an extended class?
+
+  - In the same way that call or apply is used on objects, the super() is used to call functions on an objects parent. Used in class constructors as a way to pass all the properties and methods of a parent onto a class that is extending that parent.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
